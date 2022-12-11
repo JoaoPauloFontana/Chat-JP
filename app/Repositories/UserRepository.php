@@ -9,7 +9,7 @@ class UserRepository
 {
     public function getUsers(): object
     {
-        $user = User::all();
+        $user = User::inRandomOrder()->get();
 
         return UserResource::collection($user);
     }

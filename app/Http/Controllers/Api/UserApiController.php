@@ -25,6 +25,6 @@ class UserApiController extends Controller
             return new JsonResponse($response);
         }
 
-        return new JsonResponse('Ocorreu um erro!');
+        return new JsonResponse('Error!');
     }
 }

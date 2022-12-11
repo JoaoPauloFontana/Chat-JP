@@ -17,7 +17,9 @@ class UserApiController extends Controller
 
     public function index(Request $request): object
     {
-        $response = $this->userService->getUsers();
+        $userId = $request->user()->id;
+
+        $response = $this->userService->getUsers($userId);
 
         if ($response['success']) {
             return new JsonResponse($response);

@@ -12,10 +12,10 @@ class UserService
         $this->userRepository = $userRepository;
     }
 
-    public function getUsers(): array
+    public function getUsers(int $UserId): array
     {
         try {
-            $users = $this->userRepository->getUsers();
+            $users = $this->userRepository->getUsers($UserId);
 
             return [
                 'success'  => true,

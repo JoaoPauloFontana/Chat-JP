@@ -37,7 +37,9 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 import Echo from 'laravel-echo';
 
-window.io = require('socket.io-client');
+import Socket from 'socket.io-client';
+
+window.io = Socket;
 
 window.Echo = new Echo({
     broadcaster: 'socket.io',

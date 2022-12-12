@@ -18,13 +18,13 @@ import Users from "./_partials/Users.vue";
 import Conversation from "./_partials/Conversation.vue";
 
 export default {
-  data() {
-    return {};
-  },
-  components: {
-    Sidebar,
-    Users,
-    Conversation,
-  },
-};
+    data() {
+      return {};
+    },
+    components: {
+      Sidebar,
+      Users,
+      Conversation,
+    },
+  };
 </script>
